@@ -1,0 +1,9 @@
+nav{
+    margin-top: 15px;
+}
+.navLink {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(248, 37, 37);
+    border: 1px solid rgb(0, 0, 0);
+}
