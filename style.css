@@ -32,20 +32,19 @@ body {
     padding: 20px;
     padding-bottom: 381px;
     margin-top: 150px;
+    text-align: center;
 }
 .home-text h1{
     font-size: 50px;
     font-weight: bold;
-    padding-left: 150px;
+    
 }
 .home-text h2{
     font-size: 30px;
     font-weight: bold;
-    padding-left: 150px;
+    
 }
-.home-text p{
-    padding-left: 150px;
-}
+
 .resume-btn{
     background-color: crimson;
     color: white;
@@ -53,7 +52,6 @@ body {
     padding: 10px;
     border-radius: 5px;
     margin-top: 50px;
-    margin-left: 150px;
     text-decoration: none;
 }
 
@@ -140,4 +138,5 @@ body {
 footer{
     text-align: center;
     color: white;
+    padding: 4px;
 }
