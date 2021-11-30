@@ -5,8 +5,7 @@ body {
     font-size: 14px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.discordapp.com/attachments/690148635375435825/856863476529627166/wallpaperflare.com_wallpaper.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 20px;
+    background-size: cover;
 }
 .nav-section{
     display: flex;
@@ -59,9 +58,9 @@ body {
     background-color: rgba(0, 0, 0, 0.178);
 }
 
-.about, .skills{
+.about, .skills, .projects, .contact{
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     margin-top: 73px; /* Location of the box */
     margin-bottom: 20px;
@@ -73,12 +72,12 @@ body {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.about-text {
+.about-text, .skills-text, .projects-text, .contact-text{
     background-color: #00000086;
     margin: auto;
     padding: 20px;
     color: white;
-    width: 100%;
+    width: 95%;
     height: 95%;
   }
 .about-desc, .about-passion{
@@ -105,14 +104,14 @@ body {
     cursor: pointer;
   }
   
-.skills-list{
+.skills-list, .projects-list{
     width: fit-content;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     padding: 20px;
 }
-.skills-item{
+.skills-item, .project-item{
     background: rgba(0, 25, 54);
     border-radius: 5px;
     border: 1px solid rgb(8, 58, 37);
@@ -124,8 +123,8 @@ body {
     text-align: center;
 }
 .skills-item img{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 }
 .skills-bar{
     padding: 10px;
@@ -133,6 +132,17 @@ body {
 .skills-bar h1{
     font-size: 25px;
     font-weight: bold;
+}
+
+.tech-text{
+    font-weight: bold;
+    text-align: start;
+}
+.features-list{
+    text-align: start;
+}
+.project-img img{
+    width: 100%;
 }
 
 footer{
