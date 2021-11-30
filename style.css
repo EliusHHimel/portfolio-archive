@@ -14,6 +14,7 @@ body {
 .nav-list{
     list-style: none;
     display: flex;
+    flex-direction: row;
 }
 
 .nav-list a{
@@ -24,6 +25,14 @@ body {
 }
 .nav-list a:hover{
     color: crimson;
+}
+.nav-icon{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+    display: none;
 }
 
 .home-text{
@@ -188,5 +197,20 @@ footer{
 @media screen and (max-width: 600px) {
     .skills-list, .projects-list, .contact-list{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-list{
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .nav-list a{
+        color: black;
+        padding: 10px;
+    }
+    .nav-icon{
+        display: block;
     }
 }
