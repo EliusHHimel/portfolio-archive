@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.discordapp.com/attachments/690148635375435825/856863476529627166/wallpaperflare.com_wallpaper.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1524169358666-79f22534bc6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -62,7 +62,7 @@ body {
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
-    margin-top: 73px; /* Location of the box */
+    margin-top: 66px; /* Location of the box */
     margin-bottom: 20px;
     left: 0;
     top: 0;
@@ -111,7 +111,7 @@ body {
     grid-gap: 25px;
     padding: 20px;
 }
-.skills-item, .project-item{
+.skills-item, .project-item, .contact-item{
     background: rgba(0, 25, 54);
     border-radius: 5px;
     border: 1px solid rgb(8, 58, 37);
@@ -144,6 +144,39 @@ body {
 .project-img img{
     width: 100%;
 }
+.contact-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+}
+.contact-item a{
+text-decoration: none;
+color: white;
+}
+.name-field, .email-field, .message-field{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(8, 58, 37);
+    border-radius: 5px;
+}
+
+.send-btn{
+    background-color: crimson;
+    color: white;
+    border: 1px solid crimson;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.social-media{
+    text-align: start;
+    font-size: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 footer{
     text-align: center;
