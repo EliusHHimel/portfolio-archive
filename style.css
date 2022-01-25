@@ -150,7 +150,14 @@ body {
 .skills-list, .projects-list{
     width: fit-content;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+}
+.projects-list{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
     padding: 20px;
 }
@@ -172,8 +179,8 @@ body {
     padding-bottom: 20px;
 }
 .skills-item img{
-    width: 280px;
-    height: 280px;
+    width: 100px;
+    height: 100px;
 }
 .skills-bar{
     padding: 10px;
