@@ -57,6 +57,27 @@ navBtn.onclick = function () {
     }
 }
 
+function sendEmail() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const tempParams = {
+        "sender_name": name,
+        "user_email": email,
+        "message": message
+    };
+    emailjs.send("service_yi98w5j", "template_6wypdd7", tempParams)
+        .then(res => {
+            document.getElementById('name').value;
+            document.getElementById('email').value;
+            document.getElementById('message').value;
+            if (res.status == 200) {
+                alert('Message sent successfully');
+            }
+        })
+}
+
+
 // aboutSpan.onclick = function () {
 //     aboutModal.style.display = 'none';
 //     skillsModal.style.display = 'none';
