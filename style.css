@@ -147,7 +147,7 @@ body {
     cursor: pointer;
   }
   
-.skills-list, .projects-list{
+.skills-list{
     width: fit-content;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
