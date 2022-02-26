@@ -276,8 +276,8 @@ footer{
 
 /* Animation */
 .anim-typewriter h1{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
-blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+blinkTextCursor .75s steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -288,20 +288,20 @@ blinkTextCursor 500ms steps(44) infinite normal;
   to{border-right-color: transparent;}
 }
 
-.about-desc h2 {
+.about-desc h2, .about-passion h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */ /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 4s steps(40, end),
-      blink-caret .75s step-end infinite;
+    typing 3s steps(44) 1s 1 normal both,
+      blink-caret .75s infinite normal;
   }
 
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 27vh }
   }
   
   /* The typewriter cursor effect */
