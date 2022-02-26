@@ -283,7 +283,7 @@ blinkTextCursor .75s steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 90vh;}
+  to{width: 100vh;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
