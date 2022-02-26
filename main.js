@@ -19,6 +19,7 @@ const aboutSpan = document.getElementsByClassName('close');
 //     location.href = 'https://facebook.com'
 // }
 
+
 aboutBtn.onclick = function () {
     aboutModal.style.display = 'block';
     skillsModal.style.display = 'none';
