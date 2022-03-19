@@ -15,10 +15,6 @@ const navBtn = document.getElementById('nav-btn');
 
 const aboutSpan = document.getElementsByClassName('close');
 
-// resumeBtn.onclick = function () {
-//     location.href = 'https://facebook.com'
-// }
-
 
 aboutBtn.onclick = function () {
     aboutModal.style.display = 'block';
