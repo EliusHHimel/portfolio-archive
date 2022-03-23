@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+body{
+    font-family:'sylfaen',sans-serif;
+    text-rendering:optimizeLegibility;
+    color: #fff;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*==========
+home page
+===========*/
+#home{
+    background-image: linear-gradient(rgba(34,34,34,.6), rgba(34,34,34,.6)), url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+#home .hero{
+    padding: 50px 0;
+    flex-basis: 70%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#home .hero img{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#home .hero b{
+    font-size: 3.5rem;
+}
+#home .hero h1{
+    font-size: 6rem;
+    line-height: 6rem;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+#home .hero h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    animation: ayesha 2s linear 1s infinite;
+    -webkit-animation: ayesha 2s linear 0s 1;
+}
+@keyframes ayesha{
+    0%{
+        width: 100%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+#home .hero h2{
+    font-size: 2.5rem;
+    font-style: italic;
+}
+#home nav{
+    padding: 50px 0;
+    flex-basis: 30%;
+    text-align: center;
+    background: rgba(0,102,153,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    display: block;
+}
+nav ul li a .btn{
+    background: transparent;
+    border:none;
+    height: 50px;
+    width: 160px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid #fff;
+    border-radius: .3rem;
+    box-shadow:.5rem .5rem .5rem #222;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+nav ul li a .btn:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #006699;
+    border: none;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+.nav-btn{
+    display: none;
+}
+
+/*===========================
+media query for small devices
+============================*/
+@media only screen and (max-width: 668px){
+    html{
+        font-size:40.5%;
+    }
+    #home .hero img{
+        height: 150px;
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 576px){
+    #home nav{
+        position: absolute;
+        width: 0%;
+        overflow: hidden;
+        z-index: 99;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+    #home .hero{
+        flex-basis: 100%;
+        padding: 50px 0;
+        position: relative;
+    }
+    #home .hero .nav-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        background: transparent;
+        text-align: center;
+        z-index: 999;
+        display: block;
+    }
+    #home .nav-btn button{
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 10rem;
+        line-height: 4rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #home .nav-btn #open-nav{
+        display: block
+    }
+    #home .nav-btn #close-nav{
+        display: none;
+    }
+    #home nav{
+        background: rgba(0,102,153,.9);
+    }
+}

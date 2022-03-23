@@ -24,6 +24,7 @@ body {
     font-size: 18px;
     letter-spacing: .20em;
     font-weight: 400;
+    font-family: 'Arvo', serif;
 }
 .nav-list a:hover{
     color: crimson;
@@ -132,9 +133,13 @@ body {
     padding: 25px;
     text-align: justify;
 }
+.about-desc p, .about-passion p{
+    font-family: 'Chakra Petch', sans-serif;
+}
 .about-desc h2, .about-passion h2{
     font-size: 30px;
     font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
 }
   .close {
       margin-left: 20px;
