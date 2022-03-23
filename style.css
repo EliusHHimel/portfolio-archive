@@ -43,6 +43,7 @@ body {
     padding-bottom: 381px;
     margin-top: 150px;
     text-align: center;
+    font-family: 'Source Code Pro', monospace;
 }
 .home-text h1{
     font-size: 50px;
@@ -269,7 +270,6 @@ footer{
 .home-text h1{
     position: relative;
     top: 50%;  
-    width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     text-align: center;
@@ -285,7 +285,7 @@ blinkTextCursor .75s steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 55%;}
+  to{width: 17em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
