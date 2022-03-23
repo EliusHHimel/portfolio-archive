@@ -11,6 +11,10 @@ body{
     font-family:'sylfaen',sans-serif;
     text-rendering:optimizeLegibility;
     color: #fff;
+    background-image: linear-gradient(rgba(34,34,34,.6), rgba(34,34,34,.6)), url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 .container{
     max-width: 100%;
@@ -22,10 +26,7 @@ body{
 home page
 ===========*/
 #home{
-    background-image: linear-gradient(rgba(34,34,34,.6), rgba(34,34,34,.6)), url(img/background1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -140,6 +141,12 @@ nav ul li a .btn:hover{
 .nav-btn{
     display: none;
 }
+
+.copyright{
+    font-size: 14px;
+    margin-top: 50px;
+}
+
 
 /*===========================
 media query for small devices
