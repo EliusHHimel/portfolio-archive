@@ -22,6 +22,7 @@ aboutBtn.onclick = function () {
     home.style.display = 'none';
     contact.style.display = 'none';
     projects.style.display = 'none';
+    counter.style.display = 'none';
 }
 
 skillsBtn.onclick = function () {
@@ -30,6 +31,7 @@ skillsBtn.onclick = function () {
     home.style.display = 'none';
     contact.style.display = 'none';
     projects.style.display = 'none';
+    counter.style.display = 'none';
 }
 projectsBtn.onclick = function () {
     projects.style.display = 'block';
@@ -37,6 +39,7 @@ projectsBtn.onclick = function () {
     skillsModal.style.display = 'none';
     home.style.display = 'none';
     contact.style.display = 'none';
+    counter.style.display = 'none';
 }
 contactBtn.onclick = function () {
     contact.style.display = 'block';
@@ -44,6 +47,7 @@ contactBtn.onclick = function () {
     skillsModal.style.display = 'none';
     home.style.display = 'none';
     projects.style.display = 'none';
+    counter.style.display = 'none';
 }
 navBtn.onclick = function () {
     if (nav.style.display === 'none') {
@@ -72,6 +76,41 @@ function sendEmail() {
                 alert('Message sent successfully');
             }
         })
+
+}
+// Visit Counter
+
+const KEY = `bc6c29e7-96de-44a5-911e-8ab2bf535ed5`;
+const NAMESPACE = "eliushhimel.com";
+const COUNT_URL = `https://api.countapi.xyz`;
+
+const counter = document.getElementById("visit-count");
+
+const getCount = async () => {
+    const response = await fetch(`${COUNT_URL}/get/${NAMESPACE}/${KEY}`);
+    const data = await response.json();
+    setValue(data.value);
+};
+
+const incrementCount = async () => {
+    const response = await fetch(`${COUNT_URL}/hit/${NAMESPACE}/${KEY}`);
+    const data = await response.json();
+    setValue(data.value);
+};
+
+const setValue = (num) => {
+    counter.innerText = `Total Unique Visitor: ${num}`;
+};
+
+if (localStorage.getItem("hasVisited") == null) {
+    incrementCount()
+        .then(() => {
+            localStorage.setItem("hasVisited", "true");
+        })
+        .catch((err) => console.log(err));
+} else {
+    getCount()
+        .catch((err) => console.log(err));
 }
 
 
