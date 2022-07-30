@@ -80,12 +80,12 @@ function sendEmail() {
 //     skillsModal.style.display = 'none';
 // }
 
-window.onclick = function (event) {
-    if (event.target == aboutModal || event.target == skillsModal || event.target == nav) {
-        aboutModal.style.display = 'none';
-        skillsModal.style.display = 'none';
-        home.style.display = 'block';
-        contact.style.display = 'none';
-        projects.style.display = 'none';
-    }
-}
+// window.onclick = function (event) {
+//     if (event.target == aboutModal || event.target == skillsModal || event.target == nav) {
+//         aboutModal.style.display = 'none';
+//         skillsModal.style.display = 'none';
+//         home.style.display = 'block';
+//         contact.style.display = 'none';
+//         projects.style.display = 'none';
+//     }
+// }
